@@ -103,8 +103,7 @@
               #(and %1 %2) 
               true 
               (map #(are-children-balanced? inp-map %) sub-nodes )) 
-           (let [
-                 bal-val (first (filter (fn [[k v]] (not (== 1 (count v)))) sums-map))] 
+           (let [bal-val (first (filter (fn [[k v]] (not (== 1 (count v)))) sums-map))] 
              {unbal-name (- (bal-val 0) (unbal-val 0))})
            (find-unbalanced-node inp-map unbal-name)
            )
