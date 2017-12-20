@@ -17,4 +17,3 @@
   (is (= 3 (day11/num-steps (make-moves [:ne :ne :ne]))))
   (is (= 0 (day11/num-steps (make-moves [:ne :ne :sw :sw]))))
   (is (= 2 (day11/num-steps (make-moves [:ne :ne :s :s])))))
-
